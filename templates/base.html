@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldBites Intelligence System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="/" class="logo" aria-label="WorldBites Intelligence System home">WBIS</a>
 
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/dataset">Dataset</a></li>
+                <li><a href="/analysis">Analysis</a></li>
+                <li><a href="/visualizations">Visualizations</a></li>
+                <li><a href="/alerts">Alerts</a></li>
+                <li><a href="/report">Report</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WorldBites Intelligence System</p>
+    </footer>
+</body>
+</html>

@@ -1,1 +1,67 @@
+{% extends "base.html" %}
 
+{% block content %}
+<section class="hero-section" aria-labelledby="hero-title">
+    <div class="hero-content">
+        <h1 id="hero-title">WorldBites Intelligence System</h1>
+        <p class="hero-subtitle">Global Event Intelligence and Risk Analysis Platform</p>
+        <a class="primary-button" href="/analysis">Explore Analysis</a>
+    </div>
+</section>
+
+<section class="statistics-section" aria-labelledby="statistics-title">
+    <h2 id="statistics-title">Intelligence Overview</h2>
+
+    <div class="metric-card-grid">
+        <article class="metric-card">
+            <h3>Total Events</h3>
+            <p class="metric-value">120</p>
+        </article>
+
+        <article class="metric-card">
+            <h3>High Risk Alerts</h3>
+            <p class="metric-value">28</p>
+        </article>
+
+        <article class="metric-card">
+            <h3>Average Risk Score</h3>
+            <p class="metric-value">74.5</p>
+        </article>
+
+        <article class="metric-card">
+            <h3>Most Affected Asset</h3>
+            <p class="metric-value">Crude Oil</p>
+        </article>
+    </div>
+</section>
+
+<section class="workflow-section" aria-labelledby="workflow-title">
+    <h2 id="workflow-title">Intelligence Workflow</h2>
+
+    <ol class="workflow-steps">
+        <li class="workflow-step">CSV Data</li>
+        <li class="workflow-step">Pandas Analysis</li>
+        <li class="workflow-step">NumPy Risk Scoring</li>
+        <li class="workflow-step">Matplotlib Visualizations</li>
+        <li class="workflow-step">Alert Generation</li>
+    </ol>
+</section>
+
+<section class="features-section" aria-labelledby="features-title">
+    <h2 id="features-title">Platform Features</h2>
+
+    <div class="feature-card-grid">
+        <article class="feature-card">
+            <h3>Global Event Monitoring</h3>
+        </article>
+
+        <article class="feature-card">
+            <h3>Risk Intelligence</h3>
+        </article>
+
+        <article class="feature-card">
+            <h3>Data Visualization</h3>
+        </article>
+    </div>
+</section>
+{% endblock %}
