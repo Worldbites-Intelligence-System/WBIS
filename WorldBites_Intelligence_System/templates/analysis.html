@@ -1,1 +1,154 @@
+{% extends "base.html" %}
 
+{% block title %}Statistical Analysis | WorldBites Intelligence System{% endblock %}
+
+{% block content %}
+<!-- Statistical analysis heading -->
+<section class="page-heading">
+    <div>
+        <p class="section-label">Pandas Analysis</p>
+        <h1>Statistical Analysis</h1>
+        <p>
+            This page uses Pandas descriptive statistics and groupby operations
+            to summarize risk scores across assets, regions, and event types.
+        </p>
+    </div>
+</section>
+
+{% set risk = stats | selectattr("index", "equalto", "risk_score") | first %}
+
+<!-- Main risk statistics -->
+<section class="dashboard-section">
+    <div class="section-heading">
+        <h2>Risk Score Statistics</h2>
+        <p>
+            Mean shows the average, median shows the middle value, and standard
+            deviation shows how widely the risk scores are spread.
+        </p>
+    </div>
+
+    <div class="metric-grid">
+        <article class="metric-card">
+            <p class="metric-label">Mean Risk Score</p>
+            <p class="metric-value">{{ risk.mean }}</p>
+            <p class="metric-note">Average risk across all events</p>
+        </article>
+
+        <article class="metric-card">
+            <p class="metric-label">Median Risk Score</p>
+            <p class="metric-value">{{ risk.median }}</p>
+            <p class="metric-note">Middle risk score in the dataset</p>
+        </article>
+
+        <article class="metric-card">
+            <p class="metric-label">Standard Deviation</p>
+            <p class="metric-value">{{ risk.std }}</p>
+            <p class="metric-note">Amount of variation in risk scores</p>
+        </article>
+
+        <article class="metric-card">
+            <p class="metric-label">Maximum Risk Score</p>
+            <p class="metric-value">{{ risk.max }}</p>
+            <p class="metric-note">Highest calculated event risk</p>
+        </article>
+    </div>
+</section>
+
+<!-- Asset groupby table -->
+<section class="table-section">
+    <div class="section-heading">
+        <h2>Asset-wise Average Risk Score</h2>
+        <p>
+            Pandas groupby combines events by affected asset and calculates
+            the average risk score for each group.
+        </p>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="data-table summary-table">
+            <thead>
+                <tr>
+                    <th>Affected Asset</th>
+                    <th>Event Count</th>
+                    <th>Average Impact</th>
+                    <th>Average Risk Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in assets %}
+                <tr>
+                    <td>{{ row.affected_asset }}</td>
+                    <td>{{ row.event_count }}</td>
+                    <td>{{ row.average_impact }}</td>
+                    <td>{{ row.average_risk }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Region groupby table -->
+<section class="table-section">
+    <div class="section-heading">
+        <h2>Region-wise Average Risk Score</h2>
+        <p>
+            Events are grouped by region to compare average market impact
+            and risk levels around the world.
+        </p>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="data-table summary-table">
+            <thead>
+                <tr>
+                    <th>Region</th>
+                    <th>Event Count</th>
+                    <th>Average Impact</th>
+                    <th>Average Risk Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in regions %}
+                <tr>
+                    <td>{{ row.region }}</td>
+                    <td>{{ row.event_count }}</td>
+                    <td>{{ row.average_impact }}</td>
+                    <td>{{ row.average_risk }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Event count table -->
+<section class="table-section">
+    <div class="section-heading">
+        <h2>Event Type Count</h2>
+        <p>
+            Pandas value_counts counts how often each type of global event
+            appears in the cleaned dataset.
+        </p>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="data-table summary-table">
+            <thead>
+                <tr>
+                    <th>Event Type</th>
+                    <th>Number of Events</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in events %}
+                <tr>
+                    <td>{{ row.event_type }}</td>
+                    <td>{{ row.event_count }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

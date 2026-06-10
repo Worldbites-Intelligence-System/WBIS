@@ -1,1 +1,125 @@
+{% extends "base.html" %}
 
+{% block title %}About | WorldBites Intelligence System{% endblock %}
+
+{% block content %}
+<!-- About page introduction -->
+<section class="page-heading">
+    <div>
+        <p class="section-label">About the Project</p>
+        <h1>WorldBites Intelligence System</h1>
+        <p>
+            A simple data analysis project that turns global event data into
+            useful market-impact summaries, charts, and alerts.
+        </p>
+    </div>
+</section>
+
+<section class="about-section">
+    <h2>What Is WorldBites Intelligence System?</h2>
+    <p>
+        WorldBites Intelligence System is a Flask-based web application created
+        as a college project. It studies fictional global events such as policy
+        changes, trade agreements, conflicts, natural disasters, and supply
+        disruptions. The system shows how these events may affect assets such as
+        crude oil, gold, shipping, currencies, agriculture, and technology.
+    </p>
+</section>
+
+<section class="about-section">
+    <h2>How the Project Analyzes Global Events</h2>
+    <p>
+        The project starts by loading event records from a CSV file. It cleans
+        the records, calculates a risk score, creates statistical summaries,
+        generates charts, and identifies high-risk alerts. The final results are
+        displayed on simple dashboard pages that are easy to read and explain.
+    </p>
+    <p class="report-flow">
+        CSV Data &rarr; Data Cleaning &rarr; Risk Scoring &rarr;
+        Analysis &rarr; Charts &rarr; Alerts
+    </p>
+</section>
+
+<section class="about-section">
+    <h2>Relation to My Course</h2>
+    <p>
+        This project brings together important topics from programming, data
+        analysis, statistics, and web development. It demonstrates how Python
+        can solve a practical problem by reading data, processing it, performing
+        calculations, and presenting the results through a web application.
+        Each step is kept simple so it can be clearly discussed during a viva.
+    </p>
+</section>
+
+<!-- Technology roles -->
+<section class="about-section">
+    <div class="section-heading">
+        <h2>How Each Technology Is Used</h2>
+        <p>Each tool has a clear and practical role in the project.</p>
+    </div>
+
+    <div class="technology-grid">
+        <article class="technology-card">
+            <h3>CSV Files</h3>
+            <p>
+                CSV files store the raw events, cleaned events, and high-risk
+                alerts. They make the project data easy to view and share.
+            </p>
+        </article>
+
+        <article class="technology-card">
+            <h3>Pandas</h3>
+            <p>
+                Pandas loads CSV data into DataFrames, removes duplicates,
+                handles missing values, converts data types, groups records,
+                and calculates descriptive statistics.
+            </p>
+        </article>
+
+        <article class="technology-card">
+            <h3>NumPy</h3>
+            <p>
+                NumPy helps calculate the weighted risk score and assign Low,
+                Medium, or High Risk categories to each event.
+            </p>
+        </article>
+
+        <article class="technology-card">
+            <h3>Matplotlib</h3>
+            <p>
+                Matplotlib creates charts for event counts, asset impact,
+                regional impact, risk categories, daily trends, and high-risk
+                events.
+            </p>
+        </article>
+
+        <article class="technology-card">
+            <h3>Flask</h3>
+            <p>
+                Flask connects the Python analysis to the web pages. Its routes
+                load data and send summaries, tables, charts, and alerts to the
+                correct dashboard pages.
+            </p>
+        </article>
+
+        <article class="technology-card">
+            <h3>HTML and CSS</h3>
+            <p>
+                HTML creates the page structure, tables, cards, and navigation.
+                CSS gives the dashboard a clean and professional appearance.
+            </p>
+        </article>
+    </div>
+</section>
+
+<section class="about-section">
+    <h2>Future Improvements</h2>
+    <p>
+        Future versions could use verified live event data, add filters for
+        regions and assets, allow custom risk weights, and create downloadable
+        reports. More charts and longer time-period comparisons could also make
+        the analysis more useful. These features can be added gradually without
+        changing the simple foundation of the project.
+    </p>
+</section>
+{% endblock %}

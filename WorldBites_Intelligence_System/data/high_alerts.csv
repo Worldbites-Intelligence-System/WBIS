@@ -1,1 +1,13 @@
-
+event_id,date,source,title,region,country,event_type,affected_asset,sentiment_score,confidence_score,impact_score,severity,risk_score,risk_category
+EVT0091,2025-06-28,Continental News Desk,India introduces technology rules affecting Gold,Asia,India,Technology Regulation,Gold,0.19,0.94,96,High,83.95,High Risk
+EVT0011,2024-03-05,Continental News Desk,Security concerns in Canada increase risks for Technology,North America,Canada,Conflict,Technology,-0.65,0.9,86,High,83.85,High Risk
+EVT0083,2025-05-13,Continental News Desk,New trade partnership with International Markets improves the outlook for Crude Oil,Global,International Markets,Trade Agreement,Crude Oil,0.35,0.82,96,High,83.35,High Risk
+EVT0055,2024-11-28,Global Affairs Monitor,Transport delays near Brazil disrupt Crude Oil flows,South America,Brazil,Route Disruption,Crude Oil,-0.72,0.89,83,High,82.85,High Risk
+EVT0031,2024-07-03,Global Affairs Monitor,Transport delays near United States disrupt Renewables flows,North America,United States,Route Disruption,Renewables,-0.32,0.91,92,High,82.75,High Risk
+EVT0003,2024-01-19,Continental News Desk,Policy update from Jordan brings changes for Agriculture,Middle East,Jordan,Policy Change,Agriculture,0.17,0.89,95,High,81.8,High Risk
+EVT0047,2024-10-08,Global Affairs Monitor,Investor response to France developments moves Technology,Europe,France,Market Reaction,Technology,0.04,0.89,95,High,79.85,High Risk
+EVT0095,2025-07-26,Global Affairs Monitor,Production delays in Canada tighten supplies of Renewables,North America,Canada,Supply Disruption,Renewables,-0.37,0.89,82,High,77.0,High Risk
+EVT0079,2025-04-20,Global Affairs Monitor,Transport delays near South Africa disrupt Currency flows,Africa,South Africa,Route Disruption,Currency,-0.85,0.78,73,High,76.05,High Risk
+EVT0119,2025-12-16,Global Affairs Monitor,Production delays in Chile tighten supplies of Crude Oil,South America,Chile,Supply Disruption,Crude Oil,-0.5,0.72,84,High,75.9,High Risk
+EVT0063,2025-01-13,Global Affairs Monitor,Sanctions talks involving Global Trade Network shift the outlook for Gold,Global,Global Trade Network,Sanctions,Gold,-0.73,0.82,73,High,75.25,High Risk
+EVT0123,2026-01-08,Continental News Desk,Trading activity in Renewables rises after news from Morocco,Africa,Morocco,Market Reaction,Renewables,0.09,0.82,89,High,75.25,High Risk

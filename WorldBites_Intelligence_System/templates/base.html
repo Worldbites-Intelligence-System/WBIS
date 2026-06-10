@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}WorldBites Intelligence System{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Main dashboard header -->
+    <header class="site-header">
+        <div class="header-content">
+            <a class="brand" href="{{ url_for('home') }}">
+                <span class="brand-title">WorldBites</span>
+                <span class="brand-subtitle">Intelligence System</span>
+            </a>
 
+            <!-- Dashboard navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="{{ url_for('home') }}"
+                   class="{{ 'active' if request.endpoint == 'home' else '' }}">Home</a>
+                <a href="{{ url_for('dataset') }}"
+                   class="{{ 'active' if request.endpoint == 'dataset' else '' }}">Dataset</a>
+                <a href="{{ url_for('analysis') }}"
+                   class="{{ 'active' if request.endpoint == 'analysis' else '' }}">Analysis</a>
+                <a href="{{ url_for('visualizations') }}"
+                   class="{{ 'active' if request.endpoint == 'visualizations' else '' }}">Visualizations</a>
+                <a href="{{ url_for('alerts') }}"
+                   class="{{ 'active' if request.endpoint == 'alerts' else '' }}">Alerts</a>
+                <a href="{{ url_for('report') }}"
+                   class="{{ 'active' if request.endpoint == 'report' else '' }}">Report</a>
+                <a href="{{ url_for('about') }}"
+                   class="{{ 'active' if request.endpoint == 'about' else '' }}">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Each page adds its content inside this block -->
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>WorldBites Intelligence System</p>
+        <p>Global events and market impact analysis</p>
+    </footer>
+</body>
+</html>

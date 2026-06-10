@@ -1,1 +1,135 @@
+{% extends "base.html" %}
 
+{% block title %}Dataset Explorer | WorldBites Intelligence System{% endblock %}
+
+{% block content %}
+<!-- Dataset page heading -->
+<section class="page-heading">
+    <div>
+        <p class="section-label">Event Data</p>
+        <h1>Dataset Explorer</h1>
+        <p>
+            This event data comes from a CSV file and is cleaned using Pandas
+            before it is displayed in the dashboard.
+        </p>
+    </div>
+
+    <a class="button primary-button" href="{{ url_for('download_cleaned_events') }}">
+        Download Cleaned CSV
+    </a>
+</section>
+
+<!-- Dataset filters use Flask GET query parameters -->
+<section class="filter-section">
+    <div class="section-heading">
+        <h2>Filter Events</h2>
+        <p>Select one or more values to view matching event records.</p>
+    </div>
+
+    <form class="filter-form" method="get" action="{{ url_for('dataset') }}">
+        <label>
+            Region
+            <select name="region">
+                <option value="">All Regions</option>
+                {% for item in options.region %}
+                <option value="{{ item }}" {{ 'selected' if filters.region == item else '' }}>
+                    {{ item }}
+                </option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <label>
+            Affected Asset
+            <select name="affected_asset">
+                <option value="">All Assets</option>
+                {% for item in options.affected_asset %}
+                <option value="{{ item }}" {{ 'selected' if filters.affected_asset == item else '' }}>
+                    {{ item }}
+                </option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <label>
+            Event Type
+            <select name="event_type">
+                <option value="">All Event Types</option>
+                {% for item in options.event_type %}
+                <option value="{{ item }}" {{ 'selected' if filters.event_type == item else '' }}>
+                    {{ item }}
+                </option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <label>
+            Risk Category
+            <select name="risk_category">
+                <option value="">All Risk Categories</option>
+                {% for item in options.risk_category %}
+                <option value="{{ item }}" {{ 'selected' if filters.risk_category == item else '' }}>
+                    {{ item }}
+                </option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <div class="filter-actions">
+            <button class="button primary-button" type="submit">Apply Filters</button>
+            <a class="button secondary-button" href="{{ url_for('dataset') }}">Clear Filters</a>
+        </div>
+    </form>
+</section>
+
+<!-- Cleaned event data table -->
+<section class="table-section">
+    <div class="section-heading">
+        <h2>Cleaned Global Events</h2>
+        <p>{{ data|length }} events are available in the cleaned dataset.</p>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Source</th>
+                    <th>Title</th>
+                    <th>Region</th>
+                    <th>Country</th>
+                    <th>Event Type</th>
+                    <th>Affected Asset</th>
+                    <th>Risk Score</th>
+                    <th>Risk Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{ row.date }}</td>
+                    <td>{{ row.source }}</td>
+                    <td class="title-cell">{{ row.title }}</td>
+                    <td>{{ row.region }}</td>
+                    <td>{{ row.country }}</td>
+                    <td>{{ row.event_type }}</td>
+                    <td>{{ row.affected_asset }}</td>
+                    <td>{{ row.risk_score }}</td>
+                    <td>
+                        <span class="risk-badge {{ row.risk_category|lower|replace(' ', '-') }}">
+                            {{ row.risk_category }}
+                        </span>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td class="empty-message" colspan="9">
+                        No events match the selected filters.
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

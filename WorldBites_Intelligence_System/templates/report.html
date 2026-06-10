@@ -1,1 +1,213 @@
+{% extends "base.html" %}
 
+{% block title %}Project Report | WorldBites Intelligence System{% endblock %}
+
+{% block content %}
+<!-- Project report heading -->
+<section class="page-heading report-heading">
+    <div>
+        <p class="section-label">College Project Documentation</p>
+        <h1>WorldBites Intelligence System Project Report</h1>
+        <p>
+            A Flask-based data analysis web application for studying the possible
+            market impact of fictional global events.
+        </p>
+    </div>
+</section>
+
+<!-- Live project summary -->
+<section class="report-summary">
+    <div class="metric-grid">
+        <article class="metric-card">
+            <p class="metric-label">Events Analyzed</p>
+            <p class="metric-value">{{ data.total_events }}</p>
+        </article>
+        <article class="metric-card">
+            <p class="metric-label">Average Risk Score</p>
+            <p class="metric-value">{{ data.average_risk_score }}</p>
+        </article>
+        <article class="metric-card">
+            <p class="metric-label">Regions Covered</p>
+            <p class="metric-value">{{ data.total_regions }}</p>
+        </article>
+        <article class="metric-card">
+            <p class="metric-label">Generated Alerts</p>
+            <p class="metric-value">{{ alerts|length }}</p>
+        </article>
+    </div>
+</section>
+
+<article class="project-report">
+    <section class="report-section">
+        <h2>1. Introduction</h2>
+        <p>
+            WorldBites Intelligence System is a data analysis web application
+            created to study global events and their possible effect on market
+            assets. It presents cleaned data, statistical summaries, charts, and
+            high-risk alerts through a simple Flask dashboard.
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>2. Problem Statement</h2>
+        <p>
+            Global events such as conflicts, policy changes, natural disasters,
+            and trade agreements can affect markets in different ways. Raw event
+            data can be difficult to understand without cleaning, scoring, and
+            visual presentation. This project provides a simple system for
+            organizing and analyzing that information.
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>3. Objectives</h2>
+        <ul>
+            <li>Load and clean global event data stored in CSV format.</li>
+            <li>Calculate an easy-to-understand risk score for each event.</li>
+            <li>Compare risk and impact across assets, regions, and event types.</li>
+            <li>Create charts that clearly present important patterns.</li>
+            <li>Identify high-risk events using a simple alert condition.</li>
+            <li>Display the results through a professional Flask dashboard.</li>
+        </ul>
+    </section>
+
+    <section class="report-section">
+        <h2>4. Dataset Description</h2>
+        <p>
+            The project uses a fictional CSV dataset containing
+            <strong>{{ data.total_events }} global events</strong>. Each row
+            includes the event date, source, title, region, country, event type,
+            affected asset, sentiment score, confidence score, impact score, and
+            severity. The dataset covers {{ data.total_regions }} regions and
+            {{ data.total_assets }} market assets.
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>5. Tools and Technologies Used</h2>
+        <ul>
+            <li><strong>Python:</strong> Main programming language.</li>
+            <li><strong>Flask:</strong> Creates routes and displays web pages.</li>
+            <li><strong>Pandas:</strong> Loads, cleans, groups, and summarizes data.</li>
+            <li><strong>NumPy:</strong> Calculates weighted risk scores.</li>
+            <li><strong>Matplotlib:</strong> Creates and saves charts.</li>
+            <li><strong>CSV:</strong> Stores raw, cleaned, and alert data.</li>
+            <li><strong>HTML and CSS:</strong> Build and style the dashboard.</li>
+        </ul>
+    </section>
+
+    <section class="report-section">
+        <h2>6. Methodology</h2>
+        <p>
+            The system follows a clear pipeline: load raw CSV data, clean it with
+            Pandas, calculate risk scores with NumPy, create analytical summaries,
+            generate Matplotlib charts, save high-risk alerts, and display the
+            final results in Flask webpages.
+        </p>
+        <p class="report-flow">
+            CSV Data &rarr; Pandas Cleaning &rarr; NumPy Scoring &rarr;
+            Pandas Analysis &rarr; Matplotlib Charts &rarr; Flask Dashboard
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>7. Data Cleaning Process</h2>
+        <p>
+            Pandas is used to remove duplicate rows, convert the date column to
+            datetime format, remove extra spaces from text, convert score columns
+            to numeric values, and handle missing data. The cleaned result is
+            saved as <code>data/cleaned_events.csv</code>.
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>8. NumPy Risk Scoring Model</h2>
+        <p>
+            The risk score is calculated using a simple weighted formula. Impact
+            score has the highest weight, confidence score has a medium weight,
+            and the absolute sentiment score has the smallest weight.
+        </p>
+        <p class="formula">
+            Risk Score = (Impact Score × 60%) + (Confidence Score × 100 × 25%)
+            + (|Sentiment Score| × 100 × 15%)
+        </p>
+        <p>
+            Scores below 50 are Low Risk, scores from 50 to 74 are Medium Risk,
+            and scores of 75 or more are High Risk.
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>9. Pandas Analysis</h2>
+        <p>
+            Pandas descriptive statistics calculate the mean, median, standard
+            deviation, minimum, and maximum values. The project also uses
+            <code>groupby</code> to compare assets and regions, and
+            <code>value_counts</code> to count event types. The current average
+            risk score is <strong>{{ data.average_risk_score }}</strong>.
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>10. Matplotlib Visualizations</h2>
+        <p>
+            Matplotlib creates six charts showing event type counts, average asset
+            impact, average regional impact, risk categories, daily risk trends,
+            and the top high-risk events. The charts are saved as PNG files inside
+            <code>static/charts/</code> and displayed in the dashboard.
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>11. Alert System</h2>
+        <p>
+            An event becomes an alert when its risk score is at least 75 and its
+            confidence score is at least 0.70. The current dataset generates
+            <strong>{{ alerts|length }} alerts</strong>. These rows are saved in
+            <code>data/high_alerts.csv</code> for quick review.
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>12. Key Insights</h2>
+        <ul>
+            <li>The dataset contains Low, Medium, and High Risk events.</li>
+            <li>Impact and confidence strongly influence the final risk score.</li>
+            <li>Groupby analysis makes it easy to compare assets and regions.</li>
+            <li>Charts make trends and high-risk events easier to identify.</li>
+            <li>The alert condition filters the most important events for review.</li>
+        </ul>
+    </section>
+
+    <section class="report-section">
+        <h2>13. Limitations</h2>
+        <ul>
+            <li>The project uses fictional event data instead of live market data.</li>
+            <li>The risk formula is rule-based and does not predict future prices.</li>
+            <li>Risk weights are fixed and may not suit every real-world situation.</li>
+            <li>The system does not use a database or automatic data updates.</li>
+        </ul>
+    </section>
+
+    <section class="report-section">
+        <h2>14. Future Scope</h2>
+        <p>
+            Future versions could use verified live data sources, allow users to
+            select custom scoring weights, add more filters, compare longer time
+            periods, and export detailed reports. These improvements can be added
+            gradually while keeping the current system as a clear foundation.
+        </p>
+    </section>
+
+    <section class="report-section">
+        <h2>15. Conclusion</h2>
+        <p>
+            WorldBites Intelligence System demonstrates a complete beginner-friendly
+            data analysis workflow. It connects CSV data, Pandas cleaning and
+            analysis, NumPy calculations, Matplotlib charts, and Flask webpages in
+            one project. The result is simple to understand, useful for presentation,
+            and suitable for explaining during a college viva.
+        </p>
+    </section>
+</article>
+{% endblock %}
