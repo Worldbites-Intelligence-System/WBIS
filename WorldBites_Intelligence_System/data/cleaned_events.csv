@@ -1,1 +1,129 @@
-
+event_id,date,source,title,region,country,event_type,affected_asset,sentiment_score,confidence_score,impact_score,severity
+EVT0001,2024-01-05,Global Market Journal,Saudi Arabia sanctions review raises uncertainty for Crude Oil markets,Middle East,Saudi Arabia,Sanctions,Crude Oil,-0.57,0.56,39,Low
+EVT0002,2024-01-12,Market Pulse Daily,Production delays in United Arab Emirates tighten supplies of Currency,Middle East,United Arab Emirates,Supply Disruption,Currency,-0.34,0.58,67,Medium
+EVT0003,2024-01-19,Continental News Desk,Policy update from Jordan brings changes for Agriculture,Middle East,Jordan,Policy Change,Agriculture,0.17,0.89,95,High
+EVT0004,2024-01-26,Trade Route Report,Regional tensions near Germany unsettle Gold markets,Europe,Germany,Conflict,Gold,-0.78,0.75,54,Medium
+EVT0005,2024-02-02,International Policy Review,Markets assess how the France vote may affect Equity Market,Europe,France,Election Result,Equity Market,-0.03,0.83,19,Low
+EVT0006,2024-02-04,World Trade Bulletin,Storm damage in Poland interrupts Technology operations,Europe,Poland,Natural Disaster,Technology,-0.34,0.56,52,Medium
+EVT0007,2024-02-11,Global Affairs Monitor,India signs trade agreement supporting Shipping,Asia,India,Trade Agreement,Shipping,0.5,0.64,83,High
+EVT0008,2024-02-18,Economic Signal,New digital regulation in Japan changes plans for Renewables,Asia,Japan,Technology Regulation,Renewables,0.28,0.58,41,Medium
+EVT0009,2024-02-25,Global Market Journal,Trading activity in Gold rises after news from Indonesia,Asia,Indonesia,Market Reaction,Gold,0.13,0.67,39,Low
+EVT0010,2024-03-03,Market Pulse Daily,Transport delays near United States disrupt Equity Market flows,North America,United States,Route Disruption,Equity Market,-0.38,0.91,61,Medium
+EVT0011,2024-03-05,Continental News Desk,Security concerns in Canada increase risks for Technology,North America,Canada,Conflict,Technology,-0.65,0.9,86,High
+EVT0012,2024-03-12,Trade Route Report,Election outcome in Mexico brings uncertainty for Shipping,North America,Mexico,Election Result,Shipping,-0.09,0.59,59,Medium
+EVT0013,2024-03-19,International Policy Review,Severe weather in Brazil disrupts Renewables activity,South America,Brazil,Natural Disaster,Renewables,-0.34,0.68,16,Low
+EVT0014,2024-03-26,World Trade Bulletin,New trade partnership with Chile improves the outlook for Crude Oil,South America,Chile,Trade Agreement,Crude Oil,0.67,0.72,43,Medium
+EVT0015,2024-04-02,Global Affairs Monitor,Technology oversight in Argentina creates new requirements for Currency,South America,Argentina,Technology Regulation,Currency,-0.03,0.93,77,High
+EVT0016,2024-04-04,Economic Signal,Agriculture markets react sharply to news from South Africa,Africa,South Africa,Market Reaction,Agriculture,-0.35,0.61,51,Medium
+EVT0017,2024-04-11,Global Market Journal,Key route through Kenya faces delays affecting Shipping,Africa,Kenya,Route Disruption,Shipping,-0.82,0.94,14,Low
+EVT0018,2024-04-18,Market Pulse Daily,Sanctions talks involving Morocco shift the outlook for Renewables,Africa,Morocco,Sanctions,Renewables,-0.5,0.88,62,Medium
+EVT0019,2024-04-25,Continental News Desk,Supply shortage in Multiple Countries puts pressure on Crude Oil,Global,Multiple Countries,Supply Disruption,Crude Oil,-0.57,0.66,71,High
+EVT0020,2024-05-02,Trade Route Report,New rules in International Markets reshape the outlook for Currency,Global,International Markets,Policy Change,Currency,-0.13,0.75,68,Medium
+EVT0021,2024-05-04,International Policy Review,Export agreement in Global Trade Network opens opportunities for Agriculture,Global,Global Trade Network,Trade Agreement,Agriculture,0.46,0.98,33,Low
+EVT0022,2024-05-11,World Trade Bulletin,Saudi Arabia introduces technology rules affecting Gold,Middle East,Saudi Arabia,Technology Regulation,Gold,-0.07,0.86,68,Medium
+EVT0023,2024-05-18,Global Affairs Monitor,Investor response to United Arab Emirates developments moves Equity Market,Middle East,United Arab Emirates,Market Reaction,Equity Market,-0.07,0.6,87,High
+EVT0024,2024-05-25,Economic Signal,Port congestion in Jordan slows movement of Technology,Middle East,Jordan,Route Disruption,Technology,-0.63,0.92,56,Medium
+EVT0025,2024-06-01,Global Market Journal,Germany sanctions review raises uncertainty for Currency markets,Europe,Germany,Sanctions,Currency,-0.82,0.56,32,Low
+EVT0026,2024-06-03,Market Pulse Daily,Production delays in France tighten supplies of Agriculture,Europe,France,Supply Disruption,Agriculture,-0.8,0.74,64,Medium
+EVT0027,2024-06-10,Continental News Desk,Policy update from Poland brings changes for Gold,Europe,Poland,Policy Change,Gold,-0.15,0.56,75,High
+EVT0028,2024-06-17,Trade Route Report,Regional tensions near India unsettle Equity Market markets,Asia,India,Conflict,Equity Market,-0.67,0.78,44,Medium
+EVT0029,2024-06-24,International Policy Review,Markets assess how the Japan vote may affect Technology,Asia,Japan,Election Result,Technology,0.16,0.55,38,Low
+EVT0030,2024-07-01,World Trade Bulletin,Storm damage in Indonesia interrupts Shipping operations,Asia,Indonesia,Natural Disaster,Shipping,-0.5,0.61,41,Medium
+EVT0031,2024-07-03,Global Affairs Monitor,Transport delays near United States disrupt Renewables flows,North America,United States,Route Disruption,Renewables,-0.32,0.91,92,High
+EVT0032,2024-07-10,Economic Signal,New trade restrictions in Canada put pressure on Crude Oil,North America,Canada,Sanctions,Crude Oil,-0.76,0.77,65,Medium
+EVT0033,2024-07-17,Global Market Journal,Unexpected outage in Mexico disrupts Equity Market supply,North America,Mexico,Supply Disruption,Equity Market,-0.73,0.57,22,Low
+EVT0034,2024-07-24,Market Pulse Daily,Brazil announces policy change affecting Technology,South America,Brazil,Policy Change,Technology,0.14,0.9,44,Medium
+EVT0035,2024-07-31,Continental News Desk,Security concerns in Chile increase risks for Shipping,South America,Chile,Conflict,Shipping,-0.62,0.81,70,High
+EVT0036,2024-08-02,Trade Route Report,Election outcome in Argentina brings uncertainty for Renewables,South America,Argentina,Election Result,Renewables,-0.16,0.78,41,Medium
+EVT0037,2024-08-09,International Policy Review,Severe weather in South Africa disrupts Crude Oil activity,Africa,South Africa,Natural Disaster,Crude Oil,-0.32,0.62,32,Low
+EVT0038,2024-08-16,World Trade Bulletin,New trade partnership with Kenya improves the outlook for Currency,Africa,Kenya,Trade Agreement,Currency,0.53,0.7,64,Medium
+EVT0039,2024-08-23,Global Affairs Monitor,Technology oversight in Morocco creates new requirements for Agriculture,Africa,Morocco,Technology Regulation,Agriculture,0.04,0.82,81,High
+EVT0040,2024-08-30,Economic Signal,Gold markets react sharply to news from Multiple Countries,Global,Multiple Countries,Market Reaction,Gold,0.0,0.58,53,Medium
+EVT0041,2024-09-01,Global Market Journal,New rules in International Markets reshape the outlook for Renewables,Global,International Markets,Policy Change,Renewables,0.06,0.56,32,Low
+EVT0042,2024-09-08,Market Pulse Daily,Fresh border tensions in Global Trade Network weigh on Crude Oil,Global,Global Trade Network,Conflict,Crude Oil,-0.49,0.59,69,Medium
+EVT0043,2024-09-15,Continental News Desk,Saudi Arabia election result changes the outlook for Currency,Middle East,Saudi Arabia,Election Result,Currency,0.24,0.57,70,High
+EVT0044,2024-09-22,Trade Route Report,Natural disaster near United Arab Emirates puts pressure on Agriculture,Middle East,United Arab Emirates,Natural Disaster,Agriculture,-0.82,0.74,55,Medium
+EVT0045,2024-09-29,International Policy Review,Export agreement in Jordan opens opportunities for Gold,Middle East,Jordan,Trade Agreement,Gold,0.5,0.92,23,Low
+EVT0046,2024-10-01,World Trade Bulletin,Germany introduces technology rules affecting Equity Market,Europe,Germany,Technology Regulation,Equity Market,-0.09,0.58,46,Medium
+EVT0047,2024-10-08,Global Affairs Monitor,Investor response to France developments moves Technology,Europe,France,Market Reaction,Technology,0.04,0.89,95,High
+EVT0048,2024-10-15,Economic Signal,Port congestion in Poland slows movement of Shipping,Europe,Poland,Route Disruption,Shipping,-0.77,0.71,54,Medium
+EVT0049,2024-10-22,Global Market Journal,India sanctions review raises uncertainty for Agriculture markets,Asia,India,Sanctions,Agriculture,-0.74,0.72,39,Low
+EVT0050,2024-10-29,Market Pulse Daily,Production delays in Japan tighten supplies of Gold,Asia,Japan,Supply Disruption,Gold,-0.85,0.84,54,Medium
+EVT0051,2024-10-31,Continental News Desk,Storm damage in Indonesia interrupts Equity Market operations,Asia,Indonesia,Natural Disaster,Equity Market,-0.84,0.68,93,High
+EVT0052,2024-11-07,Trade Route Report,United States signs trade agreement supporting Technology,North America,United States,Trade Agreement,Technology,0.39,0.62,69,Medium
+EVT0053,2024-11-14,International Policy Review,New digital regulation in Canada changes plans for Shipping,North America,Canada,Technology Regulation,Shipping,0.12,0.89,34,Low
+EVT0054,2024-11-21,World Trade Bulletin,Trading activity in Renewables rises after news from Mexico,North America,Mexico,Market Reaction,Renewables,0.15,0.63,55,Medium
+EVT0055,2024-11-28,Global Affairs Monitor,Transport delays near Brazil disrupt Crude Oil flows,South America,Brazil,Route Disruption,Crude Oil,-0.72,0.89,83,High
+EVT0056,2024-11-30,Economic Signal,New trade restrictions in Chile put pressure on Currency,South America,Chile,Sanctions,Currency,-0.73,0.87,61,Medium
+EVT0057,2024-12-07,Global Market Journal,Unexpected outage in Argentina disrupts Technology supply,South America,Argentina,Supply Disruption,Technology,-0.65,0.79,25,Low
+EVT0058,2024-12-14,Market Pulse Daily,South Africa announces policy change affecting Shipping,Africa,South Africa,Policy Change,Shipping,-0.05,0.61,56,Medium
+EVT0059,2024-12-21,Continental News Desk,Security concerns in Kenya increase risks for Renewables,Africa,Kenya,Conflict,Renewables,-0.82,0.65,77,High
+EVT0060,2024-12-28,Trade Route Report,Election outcome in Morocco brings uncertainty for Crude Oil,Africa,Morocco,Election Result,Crude Oil,-0.08,0.86,59,Medium
+EVT0061,2024-12-30,International Policy Review,Currency markets react sharply to news from Multiple Countries,Global,Multiple Countries,Market Reaction,Currency,0.06,0.74,31,Low
+EVT0062,2025-01-06,World Trade Bulletin,Key route through International Markets faces delays affecting Agriculture,Global,International Markets,Route Disruption,Agriculture,-0.82,0.77,50,Medium
+EVT0063,2025-01-13,Global Affairs Monitor,Sanctions talks involving Global Trade Network shift the outlook for Gold,Global,Global Trade Network,Sanctions,Gold,-0.73,0.82,73,High
+EVT0064,2025-01-20,Economic Signal,Supply shortage in Saudi Arabia puts pressure on Equity Market,Middle East,Saudi Arabia,Supply Disruption,Equity Market,-0.71,0.57,61,Medium
+EVT0065,2025-01-27,Global Market Journal,New rules in United Arab Emirates reshape the outlook for Crude Oil,Middle East,United Arab Emirates,Policy Change,Crude Oil,0.27,0.9,19,Low
+EVT0066,2025-01-29,Market Pulse Daily,Fresh border tensions in Jordan weigh on Currency,Middle East,Jordan,Conflict,Currency,-0.74,0.61,58,Medium
+EVT0067,2025-02-05,Continental News Desk,Germany election result changes the outlook for Agriculture,Europe,Germany,Election Result,Agriculture,-0.22,0.81,85,High
+EVT0068,2025-02-12,Trade Route Report,Natural disaster near France puts pressure on Gold,Europe,France,Natural Disaster,Gold,-0.71,0.65,59,Medium
+EVT0069,2025-02-19,International Policy Review,Export agreement in Poland opens opportunities for Equity Market,Europe,Poland,Trade Agreement,Equity Market,0.43,0.72,15,Low
+EVT0070,2025-02-26,World Trade Bulletin,India introduces technology rules affecting Technology,Asia,India,Technology Regulation,Technology,-0.1,0.63,44,Medium
+EVT0071,2025-02-28,Global Affairs Monitor,Production delays in Japan tighten supplies of Shipping,Asia,Japan,Supply Disruption,Shipping,-0.81,0.58,95,High
+EVT0072,2025-03-07,Economic Signal,Policy update from Indonesia brings changes for Renewables,Asia,Indonesia,Policy Change,Renewables,0.1,0.77,42,Medium
+EVT0073,2025-03-14,Global Market Journal,Regional tensions near United States unsettle Gold markets,North America,United States,Conflict,Gold,-0.76,0.78,32,Low
+EVT0074,2025-03-21,Market Pulse Daily,Markets assess how the Canada vote may affect Equity Market,North America,Canada,Election Result,Equity Market,0.23,0.98,48,Medium
+EVT0075,2025-03-28,Continental News Desk,Storm damage in Mexico interrupts Technology operations,North America,Mexico,Natural Disaster,Technology,-0.5,0.88,73,High
+EVT0076,2025-03-30,Trade Route Report,Brazil signs trade agreement supporting Shipping,South America,Brazil,Trade Agreement,Shipping,0.65,0.59,55,Medium
+EVT0077,2025-04-06,International Policy Review,New digital regulation in Chile changes plans for Renewables,South America,Chile,Technology Regulation,Renewables,0.02,0.66,21,Low
+EVT0078,2025-04-13,World Trade Bulletin,Trading activity in Crude Oil rises after news from Argentina,South America,Argentina,Market Reaction,Crude Oil,-0.1,0.87,42,Medium
+EVT0079,2025-04-20,Global Affairs Monitor,Transport delays near South Africa disrupt Currency flows,Africa,South Africa,Route Disruption,Currency,-0.85,0.78,73,High
+EVT0080,2025-04-27,Economic Signal,New trade restrictions in Kenya put pressure on Agriculture,Africa,Kenya,Sanctions,Agriculture,-0.41,0.7,46,Medium
+EVT0081,2025-04-29,Global Market Journal,Election outcome in Morocco brings uncertainty for Shipping,Africa,Morocco,Election Result,Shipping,-0.04,0.86,15,Low
+EVT0082,2025-05-06,Market Pulse Daily,Severe weather in Multiple Countries disrupts Renewables activity,Global,Multiple Countries,Natural Disaster,Renewables,-0.32,0.67,53,Medium
+EVT0083,2025-05-13,Continental News Desk,New trade partnership with International Markets improves the outlook for Crude Oil,Global,International Markets,Trade Agreement,Crude Oil,0.35,0.82,96,High
+EVT0084,2025-05-20,Trade Route Report,Technology oversight in Global Trade Network creates new requirements for Currency,Global,Global Trade Network,Technology Regulation,Currency,0.15,0.92,48,Medium
+EVT0085,2025-05-27,International Policy Review,Agriculture markets react sharply to news from Saudi Arabia,Middle East,Saudi Arabia,Market Reaction,Agriculture,-0.03,0.84,29,Low
+EVT0086,2025-05-29,World Trade Bulletin,Key route through United Arab Emirates faces delays affecting Gold,Middle East,United Arab Emirates,Route Disruption,Gold,-0.44,0.64,58,Medium
+EVT0087,2025-06-05,Global Affairs Monitor,Sanctions talks involving Jordan shift the outlook for Equity Market,Middle East,Jordan,Sanctions,Equity Market,-0.56,0.57,82,High
+EVT0088,2025-06-12,Economic Signal,Supply shortage in Germany puts pressure on Technology,Europe,Germany,Supply Disruption,Technology,-0.71,0.56,48,Medium
+EVT0089,2025-06-19,Global Market Journal,New rules in France reshape the outlook for Currency,Europe,France,Policy Change,Currency,0.01,0.59,37,Low
+EVT0090,2025-06-26,Market Pulse Daily,Fresh border tensions in Poland weigh on Agriculture,Europe,Poland,Conflict,Agriculture,-0.74,0.88,49,Medium
+EVT0091,2025-06-28,Continental News Desk,India introduces technology rules affecting Gold,Asia,India,Technology Regulation,Gold,0.19,0.94,96,High
+EVT0092,2025-07-05,Trade Route Report,Investor response to Japan developments moves Equity Market,Asia,Japan,Market Reaction,Equity Market,-0.01,0.82,45,Medium
+EVT0093,2025-07-12,International Policy Review,Port congestion in Indonesia slows movement of Technology,Asia,Indonesia,Route Disruption,Technology,-0.63,0.56,19,Low
+EVT0094,2025-07-19,World Trade Bulletin,United States sanctions review raises uncertainty for Shipping markets,North America,United States,Sanctions,Shipping,-0.74,0.58,55,Medium
+EVT0095,2025-07-26,Global Affairs Monitor,Production delays in Canada tighten supplies of Renewables,North America,Canada,Supply Disruption,Renewables,-0.37,0.89,82,High
+EVT0096,2025-07-28,Economic Signal,Policy update from Mexico brings changes for Crude Oil,North America,Mexico,Policy Change,Crude Oil,0.02,0.88,51,Medium
+EVT0097,2025-08-04,Global Market Journal,Regional tensions near Brazil unsettle Equity Market markets,South America,Brazil,Conflict,Equity Market,-0.61,0.77,14,Low
+EVT0098,2025-08-11,Market Pulse Daily,Markets assess how the Chile vote may affect Technology,South America,Chile,Election Result,Technology,0.09,0.81,49,Medium
+EVT0099,2025-08-18,Continental News Desk,Storm damage in Argentina interrupts Shipping operations,South America,Argentina,Natural Disaster,Shipping,-0.77,0.61,78,High
+EVT0100,2025-08-25,Trade Route Report,South Africa signs trade agreement supporting Renewables,Africa,South Africa,Trade Agreement,Renewables,0.38,0.94,60,Medium
+EVT0101,2025-08-27,International Policy Review,New trade restrictions in Kenya put pressure on Crude Oil,Africa,Kenya,Sanctions,Crude Oil,-0.73,0.65,17,Low
+EVT0102,2025-09-03,World Trade Bulletin,Unexpected outage in Morocco disrupts Currency supply,Africa,Morocco,Supply Disruption,Currency,-0.59,0.7,66,Medium
+EVT0103,2025-09-10,Global Affairs Monitor,Multiple Countries announces policy change affecting Agriculture,Global,Multiple Countries,Policy Change,Agriculture,0.26,0.61,95,High
+EVT0104,2025-09-17,Economic Signal,Security concerns in International Markets increase risks for Gold,Global,International Markets,Conflict,Gold,-0.32,0.92,41,Medium
+EVT0105,2025-09-24,Global Market Journal,Election outcome in Global Trade Network brings uncertainty for Renewables,Global,Global Trade Network,Election Result,Renewables,0.29,0.58,17,Low
+EVT0106,2025-09-26,Market Pulse Daily,Severe weather in Saudi Arabia disrupts Crude Oil activity,Middle East,Saudi Arabia,Natural Disaster,Crude Oil,-0.61,0.9,68,Medium
+EVT0107,2025-10-03,Continental News Desk,New trade partnership with United Arab Emirates improves the outlook for Currency,Middle East,United Arab Emirates,Trade Agreement,Currency,0.3,0.72,76,High
+EVT0108,2025-10-10,Trade Route Report,Technology oversight in Jordan creates new requirements for Agriculture,Middle East,Jordan,Technology Regulation,Agriculture,0.21,0.74,49,Medium
+EVT0109,2025-10-17,International Policy Review,Gold markets react sharply to news from Germany,Europe,Germany,Market Reaction,Gold,-0.2,0.88,19,Low
+EVT0110,2025-10-24,World Trade Bulletin,Key route through France faces delays affecting Equity Market,Europe,France,Route Disruption,Equity Market,-0.54,0.69,49,Medium
+EVT0111,2025-10-26,Global Affairs Monitor,Fresh border tensions in Poland weigh on Technology,Europe,Poland,Conflict,Technology,-0.43,0.62,83,High
+EVT0112,2025-11-02,Economic Signal,India election result changes the outlook for Shipping,Asia,India,Election Result,Shipping,0.26,0.94,43,Medium
+EVT0113,2025-11-09,Global Market Journal,Natural disaster near Japan puts pressure on Agriculture,Asia,Japan,Natural Disaster,Agriculture,-0.69,0.86,35,Low
+EVT0114,2025-11-16,Market Pulse Daily,Export agreement in Indonesia opens opportunities for Gold,Asia,Indonesia,Trade Agreement,Gold,0.41,0.57,53,Medium
+EVT0115,2025-11-23,Continental News Desk,United States introduces technology rules affecting Equity Market,North America,United States,Technology Regulation,Equity Market,0.29,0.63,87,High
+EVT0116,2025-11-25,Trade Route Report,Investor response to Canada developments moves Technology,North America,Canada,Market Reaction,Technology,0.08,0.9,59,Medium
+EVT0117,2025-12-02,International Policy Review,Port congestion in Mexico slows movement of Shipping,North America,Mexico,Route Disruption,Shipping,-0.34,0.56,26,Low
+EVT0118,2025-12-09,World Trade Bulletin,Brazil sanctions review raises uncertainty for Renewables markets,South America,Brazil,Sanctions,Renewables,-0.55,0.97,49,Medium
+EVT0119,2025-12-16,Global Affairs Monitor,Production delays in Chile tighten supplies of Crude Oil,South America,Chile,Supply Disruption,Crude Oil,-0.5,0.72,84,High
+EVT0120,2025-12-23,Economic Signal,Policy update from Argentina brings changes for Currency,South America,Argentina,Policy Change,Currency,-0.14,0.82,63,Medium
+EVT0121,2025-12-25,Global Market Journal,South Africa signs trade agreement supporting Technology,Africa,South Africa,Trade Agreement,Technology,0.64,0.78,28,Low
+EVT0122,2026-01-01,Market Pulse Daily,New digital regulation in Kenya changes plans for Shipping,Africa,Kenya,Technology Regulation,Shipping,0.19,0.87,64,Medium
+EVT0123,2026-01-08,Continental News Desk,Trading activity in Renewables rises after news from Morocco,Africa,Morocco,Market Reaction,Renewables,0.09,0.82,89,High
+EVT0124,2026-01-15,Trade Route Report,Transport delays near Multiple Countries disrupt Crude Oil flows,Global,Multiple Countries,Route Disruption,Crude Oil,-0.82,0.64,45,Medium
+EVT0125,2026-01-22,International Policy Review,New trade restrictions in International Markets put pressure on Currency,Global,International Markets,Sanctions,Currency,-0.59,0.6,14,Low
+EVT0126,2026-01-24,World Trade Bulletin,Unexpected outage in Global Trade Network disrupts Agriculture supply,Global,Global Trade Network,Supply Disruption,Agriculture,-0.62,0.64,50,Medium
+EVT0127,2026-01-31,Global Affairs Monitor,Saudi Arabia announces policy change affecting Gold,Middle East,Saudi Arabia,Policy Change,Gold,-0.12,0.8,77,High
+EVT0128,2026-02-07,Economic Signal,Security concerns in United Arab Emirates increase risks for Equity Market,Middle East,United Arab Emirates,Conflict,Equity Market,-0.33,0.78,68,Medium
